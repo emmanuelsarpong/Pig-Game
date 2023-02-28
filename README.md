@@ -1,6 +1,6 @@
 # Pig Game
 
-Roll the dice game made with HTML, CSS and JavaScript
+Roll-the-dice game made with HTML, CSS and JavaScript
 
 Rules:
 1. This game requires 2 
