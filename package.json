@@ -1,0 +1,24 @@
+{
+  "name": "pig-game",
+  "version": "1.0.0",
+  "description": "Roll-the-dice game made with HTML, CSS and JavaScript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmanuelsarpong/Pig-Game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmanuelsarpong/Pig-Game/issues"
+  },
+  "homepage": "https://github.com/emmanuelsarpong/Pig-Game#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
