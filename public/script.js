@@ -88,8 +88,9 @@ btnNew.addEventListener('click', function() {
     btnHold.disabled = false;
 });
 
-  const mainEl = document.getElementsByClassName('.section-top');
-  const articleEl = document.getElementsByClassName('.section-bottom');
+const mainEl = document.getElementsByClassName('.section-top');
+const articleEl = document.getElementsByClassName('.section-bottom');
+const bodyEl = document.body;
 
 
 function showHide() {
@@ -99,8 +100,9 @@ function showHide() {
 
   if (innerWidth <= 750) {
     paragraph.style.display = 'block';
-    paragraph.style.color = 'white';
-    paragraph.style.backgroundColor = 'black';
+    paragraph.style.color = 'black';
+    paragraph.style.backgroundColor = 'white';
+    bodyEl.style.backgroundColor = 'white';
     paragraph.style.fontFamily = 'proxima nova light, "Helvetica Neue", Helvetica, Arial, Sans-serif';
     paragraph.style.position = 'absolute';
     paragraph.style.top = '50%';
@@ -108,6 +110,7 @@ function showHide() {
     paragraph.style.transform = 'translate(-50%, -50%)';
     paragraph.style.fontSize = '20px';
     paragraph.style.textAlign = 'center';
+    
   } else {
     paragraph.style.display = 'none';
     mainEl.style.display = 'block';
