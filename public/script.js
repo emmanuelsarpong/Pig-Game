@@ -11,6 +11,7 @@ const diceEl = document.querySelector('.dice');
 const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
+// const mainEl = document.getElementsByTagName('main');
 
 let scores, currentScore, activePlayer;
 
@@ -86,3 +87,37 @@ btnNew.addEventListener('click', function() {
     btnRoll.disabled = false;
     btnHold.disabled = false;
 });
+
+  const mainEl = document.getElementsByClassName('.section-top');
+  const articleEl = document.getElementsByClassName('.section-bottom');
+
+
+function showHide() {
+  const paragraph = document.getElementById('message');
+  const innerWidth = window.innerWidth;
+
+
+  if (innerWidth <= 750) {
+    paragraph.style.display = 'block';
+    paragraph.style.color = 'white';
+    paragraph.style.backgroundColor = 'black';
+    paragraph.style.fontFamily = 'proxima nova light, "Helvetica Neue", Helvetica, Arial, Sans-serif';
+    paragraph.style.position = 'absolute';
+    paragraph.style.top = '50%';
+    paragraph.style.left = '50%';
+    paragraph.style.transform = 'translate(-50%, -50%)';
+    paragraph.style.fontSize = '20px';
+    paragraph.style.textAlign = 'center';
+  } else {
+    paragraph.style.display = 'none';
+    mainEl.style.display = 'block';
+  }
+}
+
+// Call the showHide function when the window is resized
+window.addEventListener('resize', showHide);
+
+// Initial check on page load
+showHide();
+
+  
