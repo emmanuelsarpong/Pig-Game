@@ -102,6 +102,7 @@ function showHide() {
     paragraph.style.display = 'block';
     paragraph.style.color = 'black';
     paragraph.style.backgroundColor = 'white';
+    paragraph.style.fontWeight = '900';
     bodyEl.style.backgroundColor = 'white';
     paragraph.style.fontFamily = 'proxima nova light, "Helvetica Neue", Helvetica, Arial, Sans-serif';
     paragraph.style.position = 'absolute';
