@@ -102,7 +102,7 @@ function showHide() {
     paragraph.style.display = 'block';
     paragraph.style.color = 'black';
     paragraph.style.backgroundColor = 'white';
-    paragraph.style.fontWeight = '900';
+    // paragraph.style.fontWeight = '900';
     bodyEl.style.backgroundColor = 'white';
     paragraph.style.fontFamily = 'proxima nova light, "Helvetica Neue", Helvetica, Arial, Sans-serif';
     paragraph.style.position = 'absolute';
@@ -122,6 +122,4 @@ function showHide() {
 window.addEventListener('resize', showHide);
 
 // Initial check on page load
-showHide();
-
-  
+showHide();  
