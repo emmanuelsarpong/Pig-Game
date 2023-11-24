@@ -76,6 +76,7 @@ btnHold.addEventListener('click', function() {
         diceEl.classList.add('hidden');
         btnRoll.disabled = true;
         btnHold.disabled = true;
+        alert(`Player ${activePlayer} won!! 🏆`)
     } else {
         // Switch to the next player
         switchPlayer();
