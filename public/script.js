@@ -71,13 +71,12 @@ btnHold.addEventListener('click', function() {
     // 2. Check if player's score is >= 20
     if (scores[activePlayer] >= 20) {
         // Finish game
-        alert('You won!! 🏆');
         document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
         document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
         diceEl.classList.add('hidden');
         btnRoll.disabled = true;
         btnHold.disabled = true;
-        
+        alert(`Player ${activePlayer} won!! 🏆`)
     } else {
         // Switch to the next player
         switchPlayer();
