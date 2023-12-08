@@ -109,7 +109,7 @@ main {
   border: none;
   font-family: inherit;
   font-size: 1.8rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   cursor: pointer;
   font-weight: 400;
   transition: all 0.2s;
@@ -131,6 +131,9 @@ main {
 
 .btn--new {
   top: 4rem;
+}
+.btn--how {
+  top: 27.5rem;
 }
 .btn--roll {
   top: 39.3rem;
@@ -169,4 +172,5 @@ main {
 .hidden {
   display: none;
 }
+
 
