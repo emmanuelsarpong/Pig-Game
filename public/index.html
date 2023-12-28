@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css" />
     <title>Roll The Dice</title>
     <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="dice-6.png">
   </head>
   <body>
-    <!-- <p class="how-to-play">Roll the dice and click on hold to accumulate points. The irst player to reach a score of 20 wins.</p> -->
     <main class="section-top">
       <section class="player player--0 player--active">
         <h2 class="name" id="name--0">Player 1</h2>
@@ -27,18 +27,12 @@
           <p class="current-score" id="current--1">0</p>
         </div>
       </section>
-      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <img src="dice-5.png" alt="Dice showing number five" class="dice" />
       <button class="btn btn--new">🔄 New game</button>
-      <button class="btn btn--how disabled" style="border-radius: 10px !important; padding: 7px;">🔄 Roll the dice and click on hold to accumulate points. The first player to reach 20 points wins!</button>
+      <button class="btn btn--how" style="border-radius: 10px !important; padding: 7px;">🔄 Roll the dice and click on hold to accumulate points. The first player to reach 20 points wins!</button>
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
     </main>
-    <article class="section-bottom" style="display: flex; justify-content: center; align-items: center; ">
-      <p id="message" class="showHideParagraph" style="width: 100vw; padding:100vh 50px;">
-        <strong>Please note: </strong>This web application is still under development and is not fully responsive on mobile devices.
-        <br><br>
-        For the best experience, please enjoy the application on a desktop or tablet to explore its full potential!<br><br>Thank you for your interest!
-      </p>
-    </article>
+
   </body>
 </html>

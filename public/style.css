@@ -173,4 +173,29 @@ main {
   display: none;
 }
 
+@media (max-width: 768px) { 
+  .player {
+    padding: 90px 0;
+  }
 
+  main {
+    margin: 0 15px;
+    padding: 0 1px;
+  }
+
+  .name {
+    text-align: center;
+  }
+
+  .btn--how {
+    display: none;
+  }
+
+  .btn--roll {
+    top: 31rem;
+  }
+
+  .btn--hold {
+    top: 52.5rem;
+  }
+} 

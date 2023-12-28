@@ -89,38 +89,39 @@ btnNew.addEventListener('click', function() {
     btnHold.disabled = false;
 });
 
-const mainEl = document.getElementsByClassName('.section-top');
-const articleEl = document.getElementsByClassName('.section-bottom');
-const bodyEl = document.body;
+// // Show and hide function for responsiveness alert
+// const mainEl = document.getElementsByClassName('.section-top');
+// const articleEl = document.getElementsByClassName('.section-bottom');
+// const bodyEl = document.body;
 
 
-function showHide() {
-  const paragraph = document.getElementById('message');
-  const innerWidth = window.innerWidth;
+// function showHide() {
+//   const paragraph = document.getElementById('message');
+//   const innerWidth = window.innerWidth;
 
 
-  if (innerWidth <= 750) {
-    paragraph.style.display = 'block';
-    paragraph.style.color = 'black';
-    paragraph.style.backgroundColor = 'white';
-    // paragraph.style.fontWeight = '900';
-    bodyEl.style.backgroundColor = 'white';
-    paragraph.style.fontFamily = 'proxima nova light, "Helvetica Neue", Helvetica, Arial, Sans-serif';
-    paragraph.style.position = 'absolute';
-    paragraph.style.top = '50%';
-    paragraph.style.left = '50%';
-    paragraph.style.transform = 'translate(-50%, -50%)';
-    paragraph.style.fontSize = '20px';
-    paragraph.style.textAlign = 'center';
+//   if (innerWidth <= 750) {
+//     paragraph.style.display = 'block';
+//     paragraph.style.color = 'black';
+//     paragraph.style.backgroundColor = 'white';
+//     // paragraph.style.fontWeight = '900';
+//     bodyEl.style.backgroundColor = 'white';
+//     paragraph.style.fontFamily = 'proxima nova light, "Helvetica Neue", Helvetica, Arial, Sans-serif';
+//     paragraph.style.position = 'absolute';
+//     paragraph.style.top = '50%';
+//     paragraph.style.left = '50%';
+//     paragraph.style.transform = 'translate(-50%, -50%)';
+//     paragraph.style.fontSize = '20px';
+//     paragraph.style.textAlign = 'center';
     
-  } else {
-    paragraph.style.display = 'none';
-    mainEl.style.display = 'block';
-  }
-}
+//   } else {
+//     paragraph.style.display = 'none';
+//     mainEl.style.display = 'block';
+//   }
+// }
 
-// Call the showHide function when the window is resized
-window.addEventListener('resize', showHide);
+// // Call the showHide function when the window is resized
+// window.addEventListener('resize', showHide);
 
-// Initial check on page load
-showHide();  
+// // Initial check on page load
+// showHide();  
